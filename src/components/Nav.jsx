@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { Menu, X, Moon, Sun, Download } from 'lucide-react'
+import { Menu, X, Moon, Sun } from 'lucide-react'
 import { navLinks, profile } from '../data'
 import { useScrollSpy } from '../hooks/useScrollSpy'
 
@@ -95,15 +95,6 @@ export default function Nav({ theme, onToggleTheme }) {
               {theme === 'dark' ? <Sun size={16} /> : <Moon size={16} />}
             </button>
 
-            <a
-              href={profile.resume}
-              download
-              className="hidden items-center gap-2 rounded-lg bg-slate-900 px-4 py-2 text-sm font-medium text-white transition-transform hover:-translate-y-0.5 sm:flex dark:bg-white dark:text-slate-900"
-            >
-              <Download size={15} />
-              Resume
-            </a>
-
             <button
               onClick={() => setOpen((v) => !v)}
               aria-label={open ? 'Close menu' : 'Open menu'}
@@ -149,15 +140,6 @@ export default function Nav({ theme, onToggleTheme }) {
               </li>
             ))}
           </ul>
-          <a
-            href={profile.resume}
-            download
-            onClick={() => setOpen(false)}
-            className="mt-6 flex items-center justify-center gap-2 rounded-xl bg-slate-900 px-4 py-3.5 text-sm font-semibold text-white dark:bg-white dark:text-slate-900"
-          >
-            <Download size={16} />
-            Download Resume
-          </a>
         </div>
       </div>
     </>

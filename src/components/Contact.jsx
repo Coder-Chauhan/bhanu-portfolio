@@ -33,7 +33,7 @@ export default function Contact() {
 
   const details = [
     { icon: Mail, label: 'Email', value: profile.email, href: `mailto:${profile.email}` },
-    { icon: Phone, label: 'Phone', value: profile.phone, href: `tel:${profile.phone.replace(/\s/g, '')}` },
+    ...profile.phones.map((p) => ({ icon: Phone, label: p.label, value: p.value, href: `tel:${p.value.replace(/\s/g, '')}` })),
     { icon: MapPin, label: 'Location', value: profile.location, href: null },
   ]
 

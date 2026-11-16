@@ -30,7 +30,7 @@ export default function Hero() {
 
           <p className="mt-7 max-w-2xl text-base leading-relaxed text-slate-600 sm:text-lg dark:text-slate-400">
             {profile.tagline} 2+ years across JavaScript, Python and Java, with a focus on API design,
-            performance and clean, maintainable systems.
+            performance, applied ML and clean, maintainable systems.
           </p>
 
           <div className="mt-5 flex items-center gap-2 text-sm text-slate-500 dark:text-slate-500">

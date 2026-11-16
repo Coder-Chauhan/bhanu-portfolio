@@ -9,8 +9,8 @@ export default function About() {
         <div className="reveal lg:col-span-3">
           <p className="text-lg leading-relaxed text-slate-700 dark:text-slate-300">{profile.summary}</p>
           <p className="mt-6 leading-relaxed text-slate-600 dark:text-slate-400">
-            I&apos;m currently completing a Master of Computer Science at the University of Adelaide while
-            continuing to build full-stack products. I care about the unglamorous parts of engineering,
+            I completed my Master of Computer Science at the University of Adelaide in July 2026, where I
+            also taught machine learning workshops and automated marking and exam processing. I care about the unglamorous parts of engineering,
             like payload sizes, cache strategy and CI pipelines that don&apos;t flake, because that&apos;s
             usually where the user-visible wins come from.
           </p>
@@ -51,7 +51,7 @@ export default function About() {
                   <p className="mt-1 font-medium text-slate-900 dark:text-white">{ed.degree}</p>
                   <p className="mt-0.5 text-sm text-slate-600 dark:text-slate-400">{ed.school}</p>
                   <p className="mt-2 font-mono text-xs text-slate-400 dark:text-slate-500">
-                    {ed.period} · {ed.detail}
+                    {ed.period}{ed.detail ? ` · ${ed.detail}` : ''}
                   </p>
                 </div>
               </div>

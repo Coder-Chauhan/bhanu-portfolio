@@ -1,8 +1,8 @@
-import { Code2, Layout, Server, Database, Wrench } from 'lucide-react'
+import { Code2, Layout, Server, Database, Wrench, ShieldCheck } from 'lucide-react'
 import Section from './Section'
 import { skills } from '../data'
 
-const ICONS = { Code2, Layout, Server, Database, Wrench }
+const ICONS = { Code2, Layout, Server, Database, Wrench, ShieldCheck }
 
 export default function Skills() {
   return (

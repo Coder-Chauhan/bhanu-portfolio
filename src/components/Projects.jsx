@@ -1,8 +1,8 @@
-import { HeartPulse, LineChart, ArrowUpRight, Check } from 'lucide-react'
+import { HeartPulse, LineChart, BrainCircuit, ClipboardList, ArrowUpRight, Check } from 'lucide-react'
 import Section from './Section'
 import { projects } from '../data'
 
-const ICONS = { HeartPulse, LineChart }
+const ICONS = { HeartPulse, LineChart, BrainCircuit, ClipboardList }
 
 export default function Projects() {
   return (
@@ -24,10 +24,19 @@ export default function Projects() {
                   >
                     <Icon size={22} />
                   </span>
-                  <ArrowUpRight
-                    size={20}
-                    className="text-slate-300 transition-all group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-indigo-500 dark:text-slate-600"
-                  />
+                  {p.link ? (
+                    <a href={p.link} target="_blank" rel="noopener noreferrer" aria-label={`Open ${p.name}`}>
+                      <ArrowUpRight
+                        size={20}
+                        className="text-slate-300 transition-all group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-indigo-500 dark:text-slate-600"
+                      />
+                    </a>
+                  ) : (
+                    <ArrowUpRight
+                      size={20}
+                      className="text-slate-300 transition-all group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-indigo-500 dark:text-slate-600"
+                    />
+                  )}
                 </div>
 
                 <h3 className="mt-6 text-xl font-bold text-slate-900 dark:text-white">{p.name}</h3>
