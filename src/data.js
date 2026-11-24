@@ -117,6 +117,22 @@ export const experience = [
 
 export const projects = [
   {
+    name: 'RAG Docs QA',
+    subtitle: 'Retrieval-Augmented Generation API for Document Q&A',
+    description:
+      'A FastAPI service that answers questions about uploaded documents. PDFs, Markdown and text files are chunked, embedded and stored in ChromaDB, and GPT-4o-mini answers only from the retrieved context with numbered source citations.',
+    highlights: [
+      'Ingestion pipeline: text extraction, overlapping chunking, OpenAI embeddings and a persistent ChromaDB vector store',
+      'Grounded answers with page-level citations; the model says so when the answer is not in the documents',
+      'REST endpoints for upload, query, listing and reset, with auto-generated Swagger docs',
+      'Offline pytest suite using fake embeddings and a fake LLM, plus Docker and GitHub Actions CI',
+    ],
+    stack: ['Python', 'FastAPI', 'LangChain', 'ChromaDB', 'OpenAI API', 'Docker'],
+    accent: 'from-emerald-500 to-teal-400',
+    icon: 'FileSearch',
+    link: 'https://github.com/Coder-Chauhan/rag-docs-qa',
+  },
+  {
     name: 'Automated Document Generation Pipeline',
     subtitle: 'End-to-End LLM Alignment: SFT, Reward Modelling and DPO',
     description:
