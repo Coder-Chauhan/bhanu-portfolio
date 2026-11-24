@@ -117,6 +117,23 @@ export const experience = [
 
 export const projects = [
   {
+    name: 'LangGraph Research Agent',
+    subtitle: 'Tool-Using AI Agent with Memory and Human-in-the-Loop',
+    description:
+      'A research assistant built as an explicit LangGraph state machine. The agent reasons over a question, calls tools for arithmetic, Wikipedia lookups and live web search, and loops until it can give a sourced answer, with conversations persisted across sessions.',
+    highlights: [
+      'Custom StateGraph with agent and tool nodes, conditional routing and a per-turn step limit to stop runaway loops',
+      'SQLite checkpointer keeps multi-turn memory per thread, so conversations can be resumed later',
+      'Optional human approval: the graph pauses before each tool call and the user can approve or decline it',
+      'Safe AST-based calculator, tool error recovery, and a provider switch between OpenAI and Anthropic models',
+      'Offline pytest suite driven by a scripted fake LLM covering the tool loop, memory and interrupts',
+    ],
+    stack: ['Python', 'LangGraph', 'LangChain', 'OpenAI API', 'SQLite', 'pytest'],
+    accent: 'from-amber-500 to-orange-400',
+    icon: 'Workflow',
+    link: 'https://github.com/Coder-Chauhan/langgraph-research-agent',
+  },
+  {
     name: 'RAG Docs QA',
     subtitle: 'Retrieval-Augmented Generation API for Document Q&A',
     description:

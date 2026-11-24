@@ -1,8 +1,8 @@
-import { HeartPulse, LineChart, BrainCircuit, ClipboardList, FileSearch, ArrowUpRight, Check } from 'lucide-react'
+import { HeartPulse, LineChart, BrainCircuit, ClipboardList, FileSearch, Workflow, ArrowUpRight, Check } from 'lucide-react'
 import Section from './Section'
 import { projects } from '../data'
 
-const ICONS = { HeartPulse, LineChart, BrainCircuit, ClipboardList, FileSearch }
+const ICONS = { HeartPulse, LineChart, BrainCircuit, ClipboardList, FileSearch, Workflow }
 
 export default function Projects() {
   return (
