@@ -54,7 +54,7 @@ export const skills = [
   {
     category: 'Databases & Analytics',
     icon: 'Database',
-    items: ['MongoDB', 'SQL', 'Pandas', 'NumPy', 'Power BI'],
+    items: ['MongoDB', 'SQL', 'dbt', 'DuckDB', 'Pandas', 'NumPy', 'Power BI'],
   },
   {
     category: 'Tools & Technologies',
@@ -116,6 +116,23 @@ export const experience = [
 ]
 
 export const projects = [
+  {
+    name: 'SaaS Revenue & Product Analytics',
+    subtitle: 'ELT Pipeline, dbt Star Schema and Power BI Reporting',
+    description:
+      'An end-to-end analytics engineering project for a fictional B2B SaaS company. CRM, billing API and product-usage data are combined into a tested dimensional model in DuckDB, with documented KPIs, automated data-quality monitoring and a four-page Power BI report. Source data is synthetic and reproducible.',
+    highlights: [
+      'Python extract-load of a CSV export, a paginated JSON billing API and a product event stream, with schema checks and a load audit',
+      'dbt staging, intermediate and mart layers forming a star schema, with an MRR revenue bridge built using CTEs and window functions',
+      '15+ documented KPIs including MRR, ARR, net and gross revenue retention, logo churn, MAU and feature adoption',
+      '45 dbt tests, including revenue reconciliation, plus a monitoring report for load health, volume drift and quarantined records',
+      'Power BI report for executives and operations with 22 DAX measures, and GitHub Actions CI that runs the full pipeline on every push',
+    ],
+    stack: ['Python', 'SQL', 'dbt', 'DuckDB', 'Power BI', 'DAX', 'GitHub Actions'],
+    accent: 'from-sky-500 to-blue-500',
+    icon: 'BarChart3',
+    link: 'https://github.com/Coder-Chauhan/saas-revenue-analytics',
+  },
   {
     name: 'LangGraph Research Agent',
     subtitle: 'Tool-Using AI Agent with Memory and Human-in-the-Loop',
