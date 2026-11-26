@@ -65,7 +65,7 @@ export const skills = [
 
 export const experience = [
   {
-    role: 'Teaching Lecturer',
+    role: 'Teaching Assistant',
     company: 'The University of Adelaide',
     period: 'Mar 2025 – Oct 2026',
     type: 'Adelaide, SA',
@@ -167,7 +167,7 @@ export const projects = [
     link: 'https://github.com/Coder-Chauhan/rag-docs-qa',
   },
   {
-    name: 'Automated Document Generation Pipeline',
+    name: 'LLM Alignment Pipeline',
     subtitle: 'End-to-End LLM Alignment: SFT, Reward Modelling and DPO',
     description:
       'An end-to-end alignment pipeline covering supervised fine-tuning, reward modelling, DPO and evaluation, comparing two base models (distilgpt2 and gpt2) across two public preference datasets.',
@@ -180,7 +180,7 @@ export const projects = [
     stack: ['Python', 'PyTorch', 'Hugging Face TRL', 'Transformers', 'DistilBERT'],
     accent: 'from-indigo-500 to-cyan-400',
     icon: 'BrainCircuit',
-    link: 'https://github.com/Coder-Chauhan?tab=repositories',
+    link: 'https://github.com/Coder-Chauhan/fine-tuning-language-models-using-reinforcement-learning-from-human-feedback',
   },
   {
     name: "Students' Ethical Awareness When Using LLMs",
